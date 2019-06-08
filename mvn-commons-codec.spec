@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-codec
 Version  : 1.2
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source0  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source1  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
@@ -20,7 +20,7 @@ Source10  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commo
 Source11  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : Apache-1.1
+License  : Apache-1.1 Apache-2.0
 Requires: mvn-commons-codec-data = %{version}-%{release}
 
 %description

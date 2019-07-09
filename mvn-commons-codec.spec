@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-codec
 Version  : 1.2
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source0  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source1  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
@@ -14,10 +14,12 @@ Source4  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commo
 Source5  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom
 Source6  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
 Source7  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
-Source8  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
-Source9  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
-Source10  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
-Source11  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+Source8  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+Source9  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+Source10  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+Source11  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+Source12  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+Source13  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-1.1 Apache-2.0
@@ -63,17 +65,23 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-c
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3
 cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
 
 
 %files
@@ -89,6 +97,8 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.pom
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
+/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar

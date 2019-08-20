@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-codec
 Version  : 1.2
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source0  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source1  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
@@ -24,6 +24,7 @@ Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-1.1 Apache-2.0
 Requires: mvn-commons-codec-data = %{version}-%{release}
+Requires: mvn-commons-codec-license = %{version}-%{release}
 
 %description
 No detailed description available
@@ -36,52 +37,63 @@ Group: Data
 data components for the mvn-commons-codec package.
 
 
+%package license
+Summary: license components for the mvn-commons-codec package.
+Group: Default
+
+%description license
+license components for the mvn-commons-codec package.
+
+
 %prep
+%setup -q -n META-INF
 
 %build
 
 %install
+mkdir -p %{buildroot}/usr/share/package-licenses/mvn-commons-codec
+cp LICENSE.txt %{buildroot}/usr/share/package-licenses/mvn-commons-codec/LICENSE.txt
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.2
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.2
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.10
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.10
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.10
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.10
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.11
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.11
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.11
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.11
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.2
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.2
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
 
 
 %files
@@ -103,3 +115,7 @@ cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/commons-codec/commons-
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
 /usr/share/java/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/mvn-commons-codec/LICENSE.txt

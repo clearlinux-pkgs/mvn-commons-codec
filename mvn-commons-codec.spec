@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-codec
 Version  : 1.2
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source0  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
 Source1  : https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
